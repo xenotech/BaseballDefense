@@ -10,7 +10,6 @@ var SSIndex=1
 var LFIndex=1
 var CFIndex=1
 var RFIndex=1
-
 var StatusDefensepositionChange=0;
 
 PlayerName = ["Null",
