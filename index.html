@@ -1,0 +1,344 @@
+<html>
+<head>
+	<script type="text/javascript" src='./DefensePosition.js'>
+	</script>
+	<!meta http-equiv="refresh" content="1">
+	<!meta Charset="euc-kr">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+</head>
+<style>
+#MainBoard {
+	position: absolute;
+	font-weight: bold;
+	font-size: 11px;
+	color: white;
+	Top: 0px;
+	left: 0px;
+	Width: 1920px;
+	Height: 1080px;
+	display: flex;
+	justify-content: Left;
+	align-items: center;
+	user-select: none;
+}
+#Defenseposition-On-Off-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 11px;
+	color: white;
+	Top: 15px;
+	left: 1400px;
+	Width: 80px;
+	Height: 30px;
+	border: 1px solid green;
+	display: flex;
+	justify-content: Left;
+	align-items: center;
+	user-select: none;
+}
+#PI-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 672px;
+	left: 811px;
+	Width: 100px;
+	Height: 50px;
+!!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#PIName-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 672px;
+	left: 917px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#CA-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 892px;
+	left: 811px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#CAName-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 892px;
+	left: 917px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#B1-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 705px;
+	left: 1571px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#B1Name-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 705px;
+	left: 1677px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#B2-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 636px;
+	left: 1192px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#B2Name-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 636px;
+	left: 1298px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#B3-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 705px;
+	left: 48px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#B3Name-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 705px;
+	left: 154px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#SS-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 636px;
+	left: 431px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#SSName-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 636px;
+	left: 537px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+#LF-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 538px;
+	left: 173px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	user-select: none;
+}
+#LFName-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 538px;
+	left: 279px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	user-select: none;
+}
+#CF-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 485px;
+	left: 811px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	user-select: none;
+}
+#CFName-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 485px;
+	left: 917px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	user-select: none;
+}
+#RF-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 538px;
+	left: 1452px;
+	Width: 100px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	user-select: none;
+}
+#RFName-text {
+	position: absolute;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	Top: 538px;
+	left: 1558px;
+	Width: 180px;
+	Height: 50px;
+!	border: 3px solid green;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	user-select: none;
+}
+</style>
+<body>
+	<img id="MainBoard" src="./DefensePosition.png"/>
+
+	<div id="Defenseposition-On-Off-text"; onclick="DefensepositionChange();">De2fensePosition</div>
+
+	<div id="PI-text"; onclick="LastPI();"></div>
+	<div id="PIName-text"; onclick="NextPI();">투수[00]</div>
+
+	<div id="CA-text"; onclick="LastCA();"></div>
+	<div id="CAName-text"; onclick="NextCA();">포수[00]</div>
+
+	<div id="B1-text"; onclick="LastB1();"></div>
+	<div id="B1Name-text"; onclick="NextB1();">1루수[00]</div>
+
+	<div id="B2-text"; onclick="LastB2();"></div>
+	<div id="B2Name-text"; onclick="NextB2();">2루수[00]</div>
+
+	<div id="B3-text"; onclick="LastB3();"></div>
+	<div id="B3Name-text"; onclick="NextB3();">3루수[00]</div>
+
+	<div id="SS-text"; onclick="LastSS();"></div>
+	<div id="SSName-text"; onclick="NextSS();">유격수[00]</div>
+
+	<div id="LF-text"; onclick="LastLF();"></div>
+	<div id="LFName-text"; onclick="NextLF();">좌익수[00]</div>
+
+	<div id="CF-text"; onclick="LastCF();"></div>
+	<div id="CFName-text"; onclick="NextCF();">중견수[00]</div>
+
+	<div id="RF-text"; onclick="LastRF();"></div>
+	<div id="RFName-text"; onclick="NextRF();">우익수[00]</div>
+
+</body>
+
+</html>
