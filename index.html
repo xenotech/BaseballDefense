@@ -38,16 +38,17 @@
 	align-items: center;
 	user-select: none;
 }
+
 #Defenseposition-On-Off-text {
 	position: absolute;
 	font-weight: bold;
 	font-size: 11px;
 	color: white;
-	Top: 15px;
-	left: 1400px;
-	Width: 80px;
-	Height: 30px;
-	border: 1px solid green;
+	Top: 930px;
+	left: 0px;
+	Width: 363px;
+	Height: 150px;
+!	border: 1px solid green;
 	display: flex;
 	justify-content: Center;
 	align-items: center;
@@ -327,7 +328,9 @@
 <body>
 	<img id="MainBoard" src="./DefensePosition.png"/>
 
-	<img id="HSBCLogo" src="./HSBCLogo.png"; onclick="DefensepositionChange();"/>
+	<!-- <img id="HSBCLogo" src="./HSBCLogo.png"; onclick="DefensepositionChange();"/> -->
+	
+	<div id="Defenseposition-On-Off-text"; onclick="DefensepositionChange();"></div>
 
 	<div id="PI-text"; onclick="LastPI();"></div>
 	<div id="PIName-text"; onclick="NextPI();">투수[00]</div>
